@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Life At MIT</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/taggd.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body>
+    <div class="background">
+      <img src="assets/campus_map.png" class="taggd" alt=""/>
+    </div>
+    <script>
+      var data = [];
+      var options = [];
+      options.push({
+        align: {
+          y: 'top'
+        },
+        offset: {
+          top: -55
+        },
+        handlers: {
+          mouseenter: 'show',
+          mouseleave: 'hide'
+        }
+      });
+      data.push([
+        { x: 1335, y: 503, text: 'Kresge Auditorium' }
+      ]);
+    </script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.taggd.js"></script>
+    <script>
+      $(window).load(function() {
+        $('.taggd').each(function(i, e) {
+          $(e).taggd(options[i], data[i]);
+        });
+      });
+    </script>
+  </body>
+</html>
