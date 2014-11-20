@@ -25,6 +25,31 @@ var getData = function() {
 		    			'<img src="assets/test.png" height="100" width="100"/>' +
 		  			'</li>' +
 				'</ul>';
+				
+				     var data = '<p align="center"><b> Kresge Auditorium </b></p>' + 
+     			'<ul id="lightGallery" class="gallery list-unstyled">' + 
+		  			'<li data-src="assets/test.png">' +
+		    			'<img src="assets/test.png" height="100" width="100"/>' +
+		  			'</li>' +
+		  			'<li data-src="http://vimeo.com/35451452">' +
+		    			'<a href="#">' +
+		    				'<img src="assets/test-video-thumb.png" height="100" width="100"/>' +
+		    			'</a>' +
+		  			'</li>' +
+		  			'<li data-src="assets/test.png">' +
+		    			'<img src="assets/test.png" height="100" width="100"/>' +
+		  			'</li>' +
+		  			'<li data-src="assets/test.png">' +
+		    			'<img src="assets/test.png" height="100" width="100"/>' +
+		  			'</li>' +
+		  			'<li data-src="assets/test.png">' +
+		    			'<img src="assets/test.png" height="100" width="100"/>' +
+		  			'</li>' +
+		  			'<li data-src="assets/test.png">' +
+		    			'<img src="assets/test.png" height="100" width="100"/>' +
+		  			'</li>' +
+				'</ul>';
+	return data;
 	return data;
 }
 
@@ -42,6 +67,10 @@ options.push({
 
 data.push([
 	{ x: 1335, y: 503, text: getData() }
+]);
+
+data.push([
+	{ x: 1400, y: 400, text: getData() }
 ]);
 
 $(document).ready(function(){
