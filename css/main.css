@@ -1,0 +1,140 @@
+
+.background {
+    height: 100%; 
+    position: absolute; 
+    overflow-y: hidden;
+    left: 0px; 
+    top: 0px; 
+    z-index: 0;
+}
+
+/* TAGGD STYLING */
+
+.taggd-wrapper {
+	overflow: hidden;
+	position: relative;
+}
+
+.taggd-wrapper .taggd-item {
+    background-color: rgba(219, 50, 92, 0.75);
+	cursor: pointer;
+	display: block;
+	padding: 10px;
+	z-index: 1000;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+.taggd-wrapper .taggd-item.active,
+.taggd-wrapper .taggd-item:hover {
+	background-color: rgba(219, 50, 92, 0.75); 
+}
+
+.taggd-wrapper .taggd-item-hover {
+    background-color: rgba(219, 50, 92, 0.95);
+    width: 250px;
+    height: 260px;
+	color: transparent;
+	display: block;
+    font-weight: lighter;
+	opacity: 0;
+	padding: 0 10px;
+	z-index: 999;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+	
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.taggd-wrapper .taggd-item-hover:after {
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	border-top-color: rgba(219, 50, 92, 0.95);
+	border-width: 20px;
+	left: 50%;
+	margin-left: -20px;
+}
+
+.taggd-wrapper .taggd-item-hover .gallery {
+	width: 95%;
+	margin: auto;
+}
+
+.taggd-wrapper .taggd-item-hover .gallery li {
+	cursor: pointer;
+}
+
+.taggd-wrapper .taggd-item-hover.show {
+	color: #fff;
+	opacity: 1;
+	padding: 10px;
+	z-index: 1000;
+}
+
+
+
+/* ADDITIONAL LIGHTGALLERY STYLING */
+
+.showThumbByDefault #lightGallery-Gallery.open .lightGallery-slide {
+    padding-bottom: 120px;
+}
+.showThumbByDefault #lightGallery-Gallery .thumb_cont .thumb_info{
+    display:none;
+}
+/*/ actions */
+.showThumbByDefault #lightGallery-action {
+    position: static;
+}
+.showThumbByDefault #lightGallery-action a {
+    margin-top: -14px !important;
+    position: absolute;
+    top: 50%;
+    z-index: 9999999;
+    background-color: transparent;
+    font-size: 28px;
+}
+.showThumbByDefault #lightGallery-action a#lightGallery-prev {
+        left: 17px;
+    }
+    .showThumbByDefault #lightGallery-action a#lightGallery-next {
+        right: 17px;
+    }
+    .localVideo #lightGallery-action {
+    position: static;
+}
+ 
+ 
+/*/######## optional ######## just for demo */
+/*/ remove scale effect of image */
+.showThumbByDefault #lightGallery-Gallery .lightGallery-slide .object{
+    transform: scale3d(1, 1, 1) !important;
+    -moz-transform: scale3d(1, 1, 1) !important;
+    -ms-transform: scale3d(1, 1, 1) !important;
+    -webkit-transform: scale3d(1, 1, 1) !important;
+    -o-transform: scale3d(1, 1, 1) !important;
+}
+/*/ transparent background */
+.showThumbByDefault#lightGallery-outer{
+    background-color: rgba(0, 0, 0, 0.55);
+}
